@@ -6,9 +6,7 @@
 <template>
     <article>
         <TransitionComponent>
-            <div
-                class="h-full items-center justify-around bg-white p-4 md:flex"
-            >
+            <div class="h-full items-center justify-around p-4 md:flex">
                 <div class="mt-1O mx-auto md:w-1/2">
                     <HeroSectionMessage />
                 </div>
@@ -826,6 +824,7 @@
                 graphique, la programmation web, mobile, l'électronique
                 industrielle et commerce divers.
             </p>
- -->        </TransitionComponent>
+ -->
+        </TransitionComponent>
     </article>
 </template>

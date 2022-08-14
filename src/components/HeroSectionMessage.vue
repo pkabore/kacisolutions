@@ -36,13 +36,13 @@
         <div class="mt-8 flex items-center justify-center">
             <router-link
                 to="/contact"
-                class="mr-4 inline-flex h-14 items-center justify-center rounded-full bg-primary-600 px-4 font-display text-lg font-semibold text-white ring-primary-600 transition duration-150 ease-in-out hover:ring"
+                class="mr-4 inline-flex h-12 items-center justify-center rounded-full bg-primary-600 px-6 font-display font-semibold text-white ring-primary-600 transition duration-150 ease-in-out hover:ring"
             >
                 Contactez nous</router-link
             >
             <router-link
                 to="/contact"
-                class="inline-flex h-14 items-center justify-center rounded-full bg-sky-600 px-4 font-display text-lg font-semibold text-white ring-sky-600 transition duration-150 ease-in-out hover:ring"
+                class="inline-flex h-12 items-center justify-center rounded-full bg-sky-600 px-6 font-display font-semibold text-white ring-sky-600 transition duration-150 ease-in-out hover:ring"
             >
                 En savoir plus</router-link
             >
