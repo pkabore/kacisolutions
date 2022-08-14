@@ -8,12 +8,12 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: '/marketing',
+    name: 'marketing',
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (marketing.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import(/* webpackChunkName: "marketing" */ '../views/MarketingView.vue')
   },
   {
     path: '/contact',
@@ -29,16 +29,23 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (services.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "services" */ '../views/ServicesView.vue')
+    component: () => import(/* webpackChunkName: "services" */ '../views/ServiceView.vue')
   },
-
-  {
-    path: '/showcase',
-    name: 'showcase',
+{
+    path: '/produits',
+    name: 'produits',
     // route level code-splitting
-    // this generates a separate chunk (showcase.[hash].js) for this route
+    // this generates a separate chunk (produits.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "showcase" */ '../views/ShowcaseView.vue')
+    component: () => import(/* webpackChunkName: "produits" */ '../views/ProductView.vue')
+  },
+  {
+    path: '/formations',
+    name: 'formations',
+    // route level code-splitting
+    // this generates a separate chunk (course.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "course" */ '../views/CourseView.vue')
   }
 ]
 

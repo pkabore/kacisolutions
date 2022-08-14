@@ -16,7 +16,7 @@
                 >
                 <router-link
                     class="rounded-xl p-2 px-4 hover:bg-white hover:text-primary-600"
-                    to="/services"
+                    to="/produits"
                     >Produits</router-link
                 >
                 <router-link
@@ -31,13 +31,13 @@
                 >
                 <router-link
                     class="rounded-xl p-2 px-4 hover:bg-white hover:text-primary-600"
-                    to="/about"
-                    >Formation</router-link
+                    to="/formations"
+                    >Formations</router-link
                 >
 
                 <router-link
                     class="rounded-xl p-2 px-4 hover:bg-white hover:text-primary-600"
-                    to="/showcase"
+                    to="/marketing"
                     >Marketing</router-link
                 >
             </div>
