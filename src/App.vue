@@ -1,16 +1,15 @@
 <script setup>
     import Dropdown from "@/components/Dropdown.vue";
+    import Logo from "@/components/Logo.vue";
 </script>
 
 <template>
-    <header class="flex items-center p-4">
+    <header class="flex items-center bg-slate-800 py-4 backdrop-blur">
         <nav
-            class="top-O sticky inset-x-0 flex w-full items-center justify-between font-medium text-neutral-600"
+            class="sticky top-0 z-20 flex w-full items-center justify-between px-2 font-display font-medium text-white"
         >
-            <router-link class="p-2 px-4 hover:text-primary-600" to="/"
-                ><h2 class="font-display text-3xl font-black text-primary-600">
-                    Kacisolutions
-                </h2>
+            <router-link class="hover:text-primary-600" to="/">
+                <Logo class="h-7" />
             </router-link>
             <div class="hidden items-center justify-end md:flex">
                 <router-link class="p-2 px-4 hover:text-primary-600" to="/"

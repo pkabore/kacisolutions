@@ -28,7 +28,7 @@
 <template>
     <div class="lg:-mt-8">
         <h1
-            class="min-h-[180px] p-4 font-display text-4xl font-black tracking-tight sm:text-5xl"
+            class="min-h-[180px] p-4 font-display text-3xl font-black tracking-tight sm:text-4xl md:text-5xl"
         >
             {{ phrase }} <Carret />
         </h1>
@@ -41,8 +41,8 @@
                 Contactez nous</router-link
             >
             <router-link
-                to="/contact"
-                class="inline-flex h-12 items-center justify-center rounded-full bg-sky-600 px-6 font-display font-semibold text-white ring-sky-600 transition duration-150 ease-in-out hover:ring"
+                to="/services"
+                class="inline-flex h-12 items-center justify-center rounded-full bg-secondary-600 px-6 font-display font-semibold text-white ring-secondary-600 transition duration-150 ease-in-out hover:ring"
             >
                 En savoir plus</router-link
             >

@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.lime,
+        primary: colors.sky,
         secondary: colors.lime
       },
 
@@ -23,7 +23,7 @@ module.exports = {
 
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Urbanist", "system-ui", "sans-serif"],
+        display: ["Outfit", "system-ui", "sans-serif"],
         mono: ["Monaco", "Menlo", "ui-monospace", "monospace"],
       }
     },

@@ -9,7 +9,7 @@
     <div class="relative">
         <button
             @click="open = !open"
-            class="z-10 rounded-xl p-2 text-2xl text-neutral-500 ring-primary-500 transition duration-150 ease-in-out hover:text-primary-500 hover:ring focus:text-primary-500 focus:ring"
+            class="rounded-xl p-2 text-2xl text-white ring-primary-600 transition duration-150 ease-in-out hover:text-primary-600 hover:ring-4 focus:text-primary-600 focus:ring-4"
         >
             <MenuIcon class="h-7 w-7" />
         </button>
@@ -24,10 +24,10 @@
         >
             <div
                 v-show="open"
-                class="absolute right-0 mt-2 w-56 origin-top-right rounded-3xl bg-white shadow-2xl"
+                class="absolute right-0 z-20 mt-2 w-56 origin-top-right rounded-3xl bg-white shadow-2xl"
             >
                 <div
-                    class="my-4 text-center font-display font-medium text-neutral-500"
+                    class="my-4 text-center font-display font-medium text-neutral-600"
                 >
                     <router-link
                         @click="open = false"
@@ -44,21 +44,27 @@
                     <router-link
                         @click="open = false"
                         class="block py-2 transition duration-150 ease-in-out hover:bg-neutral-200 hover:text-primary-700"
+                        to="/produits"
+                        >Produits</router-link
+                    >
+                    <router-link
+                        @click="open = false"
+                        class="block py-2 transition duration-150 ease-in-out hover:bg-neutral-200 hover:text-primary-700"
                         to="/contact"
                         >Contact</router-link
                     >
                     <router-link
                         @click="open = false"
                         class="block py-2 transition duration-150 ease-in-out hover:bg-neutral-200 hover:text-primary-700"
-                        to="/about"
-                        >A propos</router-link
+                        to="/formations"
+                        >Formations</router-link
                     >
 
                     <router-link
                         @click="open = false"
                         class="block py-2 transition duration-150 ease-in-out hover:bg-neutral-200 hover:text-primary-700"
-                        to="/showcase"
-                        >Réalisations</router-link
+                        to="/marketing"
+                        >Marketing</router-link
                     >
                 </div>
             </div>

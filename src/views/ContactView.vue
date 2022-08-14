@@ -48,7 +48,7 @@
                         <WhatsappIcon
                             class="mr-2 h-6 w-6 text-neutral-400 sm:mr-4 sm:h-8 sm:w-8"
                         />
-                        <span>Nous contacter sur WhatsApp</span>
+                        <span>WhatsApp</span>
                     </a>
                     <a
                         target="_blank"
@@ -58,7 +58,7 @@
                         <FacebookIcon
                             class="mr-2 h-6 w-6 text-neutral-400 sm:mr-4 sm:h-8 sm:w-8"
                         />
-                        <span>Notre page facebook</span>
+                        <span>Facebook</span>
                     </a>
                     <a
                         target="_blank"
@@ -67,7 +67,7 @@
                         <LinkedinIcon
                             class="mr-2 h-6 w-6 text-neutral-400 sm:mr-4 sm:h-8 sm:w-8"
                         />
-                        <span>Retrouvez-nous sur LinkedIn</span>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
             </div>
@@ -82,14 +82,20 @@
                     <input
                         type="email"
                         class="input"
+                        maxlength="255"
+                        required
                         placeholder="Votre e-mail"
                     />
                     <input
-                        type="Sujet"
+                        type="text"
+                        required
+                        maxlength="255"
                         class="input"
                         placeholder="Sujet de votre message"
                     />
                     <textarea
+                        required
+                        maxlength="511"
                         class="textarea"
                         placeholder="Message ..."
                         rows="5"

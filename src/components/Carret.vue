@@ -1,6 +1,6 @@
 <template>
     <div
-        class="animate inline-block h-3 w-8 bg-primary-500 transition ease-in-out"
+        class="animate z-0 inline-flex h-3 w-8 bg-primary-500 transition ease-in-out"
     ></div>
 </template>
 
