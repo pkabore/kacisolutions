@@ -813,7 +813,7 @@
                 class="h-full grid-flow-row justify-center gap-4 p-4 pt-0 md:grid md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
             ></div>
 
-            <p class="text-lg font-[550] text-gray-600">
+            <!-- <p class="text-lg font-[550] text-gray-600">
                 KACI-SOLUTIONS est une Agence d’expertise informatique, de
                 communication, de conception / intégration de solutions
                 digitales, et de prestations de services. Le siège se trouve à
@@ -826,6 +826,6 @@
                 graphique, la programmation web, mobile, l'électronique
                 industrielle et commerce divers.
             </p>
-        </TransitionComponent>
+ -->        </TransitionComponent>
     </article>
 </template>

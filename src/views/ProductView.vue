@@ -44,7 +44,7 @@
 </script>
 <template>
     <article>
-        <Heading> Services </Heading>
+        <Heading> Produits </Heading>
         <transition
             appear
             enter-from-class="opacity-0 translate-y-10"
