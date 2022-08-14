@@ -73,7 +73,12 @@
             </div>
 
             <div class="my-10 border-t p-4 pt-10">
-                <form method="post" class="mx-auto w-full max-w-md">
+                <form
+                    data-netlify="true"
+                    name="contact"
+                    method="post"
+                    class="mx-auto w-full max-w-md"
+                >
                     <input
                         type="email"
                         class="input"
