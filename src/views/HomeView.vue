@@ -45,7 +45,9 @@
 </script>
 
 <template>
-    <article>
+    <article
+        class="sticky inset-0 bg-[url('/media/bg.jpg')] bg-cover bg-center"
+    >
         <transition
             appear
             enter-from-class="opacity-0 translate-y-10"

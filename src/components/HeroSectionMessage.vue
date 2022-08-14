@@ -29,7 +29,7 @@
     <transition>
         <div class="">
             <h1
-                class="min-h-[150px] font-display text-4xl font-black tracking-tight text-neutral-800 md:text-5xl"
+                class="min-h-[150px] max-w-xl font-display text-4xl font-black tracking-tight text-white md:text-5xl"
             >
                 {{ phrase }} <Carret />
             </h1>
