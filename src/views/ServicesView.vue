@@ -22,6 +22,22 @@
                     title: "Programmation",
                     desc: "Le code est un art pour nous. Kacisolutions ne se limite pas seulement à la partie visuelle de votre produit mais aussi aux détails de sécurité, de performance et de maintenance dans le futur.",
                 },
+                {
+                    id: 4,
+                    title: "Infogérance",
+                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
+                },
+
+                {
+                    id: 5,
+                    title: "Infographie",
+                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
+                },
+                {
+                    id: 6,
+                    title: "Infogérance",
+                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
+                },
             ],
         },
     });
@@ -39,7 +55,7 @@
             leave-to-class="opacity-0 translate-y-10"
         >
             <div
-                class="mt-12 h-full justify-center space-y-10 p-4 pt-0 md:flex md:space-y-0 md:space-x-4 md:p-10"
+                class="grid-flow-row justify-center gap-4 p-4 pt-0 md:grid md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
             >
                 <Card v-for="item in items" :key="item.id" :item="item" />
             </div>

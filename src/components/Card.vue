@@ -5,21 +5,14 @@
 
 <template>
     <div
-        class="mx-auto min-h-[50%] w-full max-w-md rounded-3xl bg-white p-8 shadow-lg"
+        class="duration-50 group mx-auto min-h-[50%] w-full max-w-md rounded-3xl bg-white p-8 shadow-lg ring-primary-500 ring-offset-4 transition ease-in-out hover:bg-slate-800"
     >
-        <div class="flex items-center justify-center">
-            <button
-                class="mx-auto inline-block rounded-full border bg-white p-3"
-            >
-                <ComputerIcon class="h-10 w-10 text-gray-400" />
-            </button>
-        </div>
         <h3
-            class="mb-6 text-center font-display text-2xl font-bold text-primary-600"
+            class="mb-6 text-center font-display text-2xl font-bold group-hover:text-primary-500"
         >
             {{ item.title }}
         </h3>
-        <p class="font-medium text-gray-600">
+        <p class="font-[550] text-gray-600 group-hover:text-white">
             {{ item.desc }}
         </p>
     </div>

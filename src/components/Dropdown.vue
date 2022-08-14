@@ -9,7 +9,7 @@
     <div class="relative">
         <button
             @click="open = !open"
-            class="rounded-3xl p-2 text-2xl text-neutral-500 ring-primary-500 transition duration-150 ease-in-out hover:text-primary-500 hover:ring focus:text-primary-500 focus:ring"
+            class="z-10 rounded-xl p-2 text-2xl text-neutral-500 ring-primary-500 transition duration-150 ease-in-out hover:text-primary-500 hover:ring focus:text-primary-500 focus:ring"
         >
             <MenuIcon class="h-7 w-7" />
         </button>
