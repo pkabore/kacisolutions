@@ -1,0 +1,86 @@
+@import "tailwindcss/base";
+@import "tailwindcss/utilities";
+@import "tailwindcss/components";
+
+@layer base {
+    @font-face {
+        font-family: "Inter";
+        font-weight: 300 900;
+        font-display: swap;
+        font-style: normal;
+        font-named-instance: "Regular";
+        src: url("/fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
+    }
+
+    @font-face {
+        font-family: "Outfit";
+        font-weight: 300 900;
+        font-display: block;
+        font-style: normal;
+        font-named-instance: "Regular";
+        src: url("/fonts/Outfit-Regular-Var.ttf") format("truetype");
+    }
+
+    :root {
+        --line-height: 1.65;
+        --text-color: #111;
+    }
+
+    @supports (font-variation-settings: normal) {
+        html {
+            @apply font-sans;
+        }
+    }
+
+    body {
+        @apply font-sans;
+        font-weight: 450;
+        line-height: var(--line-height);
+        letter-spacing: -0.004rem;
+        color: var(--text-color);
+        font-kerning: normal;
+        font-variant-ligatures: contextual common-ligatures;
+        font-feature-settings: "kern", "liga", "calt", "tnum", "cv01", "cv06",
+            "ccmp", "ss01", "ss03";
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-overflow-scrolling: touch;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .font-display {
+        font-feature-settings: normal;
+    }
+
+    a,
+    button,
+    input,
+    textarea,
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
+
+    input:autofill,
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus {
+        font-size: normal;
+        transition: background-color 5000s ease-in-out 0s !important;
+    }
+
+    .input {
+        @apply ring-primary-500 mt-3 flex h-11 w-full items-center rounded-xl px-4 text-sm font-[550] shadow transition duration-300 ease-in-out first:mt-0 focus:ring;
+    }
+
+    .textarea {
+        @apply ring-primary-500 mt-3 w-full rounded-3xl p-4 text-sm font-[550] text-neutral-800 shadow transition duration-300 ease-in-out first:mt-0 focus:ring;
+    }
+
+    button {
+        font-weight: inherit;
+    }
+}
