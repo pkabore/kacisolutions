@@ -26,22 +26,26 @@
 </script>
 
 <template>
-    <transition>
-        <div class="">
-            <h1
-                class="min-h-[150px] max-w-xl font-display text-4xl font-black tracking-tight text-white md:text-5xl"
-            >
-                {{ phrase }} <Carret />
-            </h1>
+    <div class="lg:-mt-8">
+        <h1
+            class="min-h-[180px] p-4 font-display text-4xl font-black tracking-tight sm:text-5xl"
+        >
+            {{ phrase }} <Carret />
+        </h1>
 
-            <p class="mt-8">
-                <router-link
-                    to="/contact"
-                    class="inline-flex h-12 items-center justify-center rounded-full bg-primary-600 px-8 font-display text-lg font-bold text-white ring-primary-600 transition duration-150 ease-in-out hover:ring"
-                >
-                    Contactez-nous</router-link
-                >
-            </p>
+        <div class="mt-8 flex items-center justify-center">
+            <router-link
+                to="/contact"
+                class="mr-4 inline-flex h-14 items-center justify-center rounded-full bg-primary-600 px-10 font-display text-lg font-semibold text-white ring-primary-600 transition duration-150 ease-in-out hover:ring"
+            >
+                Contactez nous</router-link
+            >
+            <router-link
+                to="/contact"
+                class="inline-flex h-14 items-center justify-center rounded-full bg-sky-600 px-10 font-display text-lg font-semibold text-white ring-sky-600 transition duration-150 ease-in-out hover:ring"
+            >
+                En savoir plus</router-link
+            >
         </div>
-    </transition>
+    </div>
 </template>

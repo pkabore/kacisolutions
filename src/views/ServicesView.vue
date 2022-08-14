@@ -55,7 +55,7 @@
             leave-to-class="opacity-0 translate-y-10"
         >
             <div
-                class="grid-flow-row justify-center gap-4 p-4 pt-0 md:grid md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
+                class="grid grid-flow-row grid-cols-1 justify-center gap-4 p-4 pt-0 md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
             >
                 <Card v-for="item in items" :key="item.id" :item="item" />
             </div>

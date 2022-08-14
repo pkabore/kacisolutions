@@ -1,68 +1,19 @@
 <script setup>
-    import Card from "@/components/Card.vue";
-    import EmailIcon from "@/components/Icons/EmailIcon.vue";
+    import TransitionComponent from "@/components/TransitionComponent.vue";
     import HeroSectionMessage from "@/components/HeroSectionMessage.vue";
-
-    const props = defineProps({
-        items: {
-            type: Array,
-            default: [
-                {
-                    id: 1,
-                    title: "Design",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
-                },
-
-                {
-                    id: 2,
-                    title: "Conception",
-                    desc: "La conception est une étape importante du processus de réalisation de votre projet. Nous mettons l'accent sur un design intuitif permettant aux utilisateurs une navigation aisée de votre site web.",
-                },
-                {
-                    id: 3,
-                    title: "Programmation",
-                    desc: "Le code est un art pour nous. Kacisolutions ne se limite pas seulement à la partie visuelle de votre produit mais aussi aux détails de sécurité, de performance et de maintenance dans le futur.",
-                },
-                {
-                    id: 4,
-                    title: "Infogérance",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
-                },
-
-                {
-                    id: 5,
-                    title: "Infographie",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
-                },
-                {
-                    id: 6,
-                    title: "Infogérance",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
-                },
-            ],
-        },
-    });
 </script>
 
 <template>
-    <article
-        class="sticky inset-0 bg-[url('/media/bg.jpg')] bg-cover bg-center"
-    >
-        <transition
-            appear
-            enter-from-class="opacity-0 translate-y-10"
-            enter-to-class="opacity-100 translate-y-0"
-            enter-active-class="transition duration-300 ease-in-out"
-            leave-active-class="transition duration-75 ease-in"
-            leave-from-class="opacity-100 translate-y-0"
-            leave-to-class="opacity-0 translate-y-10"
-        >
-            <div class="h-full items-center justify-center p-4 md:flex">
-                <div class="mx-auto w-full p-4 md:w-2/3">
+    <article>
+        <TransitionComponent>
+            <div
+                class="h-full items-center justify-around bg-white p-4 md:flex"
+            >
+                <div class="mt-1O mx-auto md:w-1/2">
                     <HeroSectionMessage />
                 </div>
                 <svg
-                    class="w-full p-8 md:w-1/3"
+                    class="p-8 md:w-1/2"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 786.81995 572.25773"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -848,8 +799,8 @@
                     />
                 </svg>
             </div>
-        </transition>
-        <transition
+        </TransitionComponent>
+        <TransitionComponent
             appear
             enter-from-class="opacity-0 translate-y-10"
             enter-to-class="opacity-100 translate-y-0"
@@ -860,16 +811,7 @@
         >
             <div
                 class="h-full grid-flow-row justify-center gap-4 p-4 pt-0 md:grid md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
-            >
-                <Card
-                    v-for="item in items"
-                    :key="item.id"
-                    :item="item"
-                    class="mt-10 first:mt-0 md:mt-0"
-                >
-                    {{ item.icon }}
-                </Card>
-            </div>
-        </transition>
+            ></div>
+        </TransitionComponent>
     </article>
 </template>
