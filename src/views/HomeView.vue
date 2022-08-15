@@ -813,7 +813,7 @@
                 <h3 class="mb-6 text-center font-display text-3xl font-black">
                     Qui sommes-nous ?
                 </h3>
-                <p class="text-lg">
+                <p class="">
                     <strong class="font-display font-bold text-primary-600"
                         >KACI-SOLUTIONS
                     </strong>
@@ -823,7 +823,7 @@
                     Burkina Faso. ​
                 </p>
 
-                <p class="mt-10 text-lg">
+                <p class="mt-10">
                     Notre équipe est constituée de professionnels spécialisés
                     dans les domaines divers allant de l'infogérance, le design
                     graphique, la programmation web, mobile, l'électronique
