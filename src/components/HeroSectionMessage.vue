@@ -3,9 +3,7 @@
     import { ref, onMounted, onUnmounted } from "vue";
 
     const input = ref(
-        "Votre partenaire en matière de conception de solutions informatiques.".split(
-            ""
-        )
+        "Votre partenaire en conception de solutions informatiques.".split("")
     );
 
     const phrase = ref("");

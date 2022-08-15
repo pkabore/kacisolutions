@@ -6,7 +6,7 @@
 <template>
     <header class="flex items-center bg-slate-800 py-4 backdrop-blur">
         <nav
-            class="sticky top-0 z-20 flex w-full items-center justify-between px-2 font-display font-medium text-white"
+            class="sticky top-0 z-20 flex w-full items-center justify-between px-2 font-display text-lg font-semibold text-white"
         >
             <router-link class="hover:text-primary-600" to="/">
                 <Logo class="h-7" />

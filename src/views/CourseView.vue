@@ -8,7 +8,7 @@
         <article
             class="m-2 my-8 mx-auto max-w-3xl rounded-3xl bg-white p-2 shadow md:p-10"
         >
-            <Heading> Nous formations </Heading>
+            <Heading> Nos formations </Heading>
         </article>
     </TransitionComponent>
 </template>

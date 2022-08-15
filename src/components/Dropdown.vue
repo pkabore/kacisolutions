@@ -27,7 +27,7 @@
                 class="absolute right-0 z-20 mt-2 w-56 origin-top-right rounded-3xl bg-white shadow-2xl"
             >
                 <div
-                    class="my-4 text-center font-display font-medium text-neutral-600"
+                    class="my-4 text-center font-display font-bold text-neutral-600"
                 >
                     <router-link
                         @click="open = false"

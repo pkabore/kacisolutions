@@ -11,7 +11,7 @@
                     <HeroSectionMessage />
                 </div>
                 <svg
-                    class="p-8 md:w-1/2"
+                    class="mt-10 h-[50vh] max-w-full p-8 sm:mt-4 md:mt-0 md:h-auto md:w-1/2"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 786.81995 572.25773"
                     xmlns:xlink="http://www.w3.org/1999/xlink"

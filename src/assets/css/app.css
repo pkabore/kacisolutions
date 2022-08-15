@@ -13,12 +13,12 @@
     }
 
     @font-face {
-        font-family: "Outfit";
+        font-family: "Urbanist";
         font-weight: 300 900;
         font-display: block;
         font-style: normal;
         font-named-instance: "Regular";
-        src: url("/fonts/Outfit-Regular-Var.ttf") format("truetype");
+        src: url("/fonts/Urbanist-Regular-Var.ttf") format("truetype");
     }
 
     :root {
