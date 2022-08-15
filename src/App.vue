@@ -4,11 +4,11 @@
 </script>
 
 <template>
-    <header class="flex items-center bg-slate-800 py-4 backdrop-blur">
+    <header class="flex items-center py-4 backdrop-blur">
         <nav
             class="sticky top-0 z-20 flex w-full items-center justify-between px-2 font-display text-lg font-semibold text-white"
         >
-            <router-link class="hover:text-primary-600" to="/">
+            <router-link class="text-primary-600 hover:text-white" to="/">
                 <Logo class="h-7" />
             </router-link>
             <div class="hidden items-center justify-end md:flex">

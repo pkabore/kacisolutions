@@ -808,23 +808,28 @@
             leave-to-class="opacity-0 translate-y-10"
         >
             <div
-                class="h-full grid-flow-row justify-center gap-4 p-4 pt-0 md:grid md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
-            ></div>
+                class="mx-auto max-w-3xl rounded-3xl bg-white p-4 font-medium shadow-2xl sm:p-10"
+            >
+                <h3 class="mb-6 text-center font-display text-3xl font-black">
+                    Qui sommes-nous ?
+                </h3>
+                <p class="text-lg">
+                    <strong class="font-display font-bold text-primary-600"
+                        >KACI-SOLUTIONS
+                    </strong>
+                    est une Agence d’expertise informatique, de communication,
+                    de conception / intégration de solutions digitales, et de
+                    prestations de services. Le siège se trouve à Ouagadougou au
+                    Burkina Faso. ​
+                </p>
 
-            <!-- <p class="text-lg font-[550] text-gray-600">
-                KACI-SOLUTIONS est une Agence d’expertise informatique, de
-                communication, de conception / intégration de solutions
-                digitales, et de prestations de services. Le siège se trouve à
-                Ouagadougou au Burkina Faso. ​
-            </p>
-
-            <p class="mt-10 text-lg font-[550] text-gray-600">
-                Notre équipe est constituée de professionnels spécialisés dans
-                les domaines divers allant de l'infogérance, le design
-                graphique, la programmation web, mobile, l'électronique
-                industrielle et commerce divers.
-            </p>
- -->
+                <p class="mt-10 text-lg">
+                    Notre équipe est constituée de professionnels spécialisés
+                    dans les domaines divers allant de l'infogérance, le design
+                    graphique, la programmation web, mobile, l'électronique
+                    industrielle et commerce divers.
+                </p>
+            </div>
         </TransitionComponent>
     </article>
 </template>

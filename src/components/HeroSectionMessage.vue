@@ -26,7 +26,7 @@
 <template>
     <div class="lg:-mt-8">
         <h1
-            class="min-h-[180px] p-4 font-display text-3xl font-black tracking-tight sm:text-4xl md:text-5xl"
+            class="min-h-[180px] p-4 font-display text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl"
         >
             {{ phrase }} <Carret />
         </h1>
