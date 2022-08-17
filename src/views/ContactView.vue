@@ -62,6 +62,7 @@
                     </a>
                     <a
                         target="_blank"
+                        href="https://bf.linkedin.com/in/amadou-kientega-00a238150"
                         class="mx-auto mt-2 flex w-10/12 items-center text-[#0288D1] decoration-2 underline-offset-2 hover:underline sm:mt-4"
                     >
                         <LinkedinIcon
@@ -74,16 +75,39 @@
 
             <div class="my-10 border-t p-4 pt-10">
                 <form
+                    id="contact"
+                    netlify
                     data-netlify="true"
                     name="contact"
-                    method="post"
+                    method="POST"
                     class="mx-auto w-full max-w-md"
+                    data-netlify-honeypot="bot-field"
                 >
+                    <input type="hidden" name="contact" value="contact" />
+                    <div class="items-center justify-between md:flex">
+                        <input
+                            type="text"
+                            class="input md:mr-4"
+                            maxlength="255"
+                            required
+                            name="nom"
+                            placeholder="Votre nom"
+                        />
+                        <input
+                            type="text"
+                            required
+                            maxlength="255"
+                            class="input md:mt-0"
+                            name="prenom"
+                            placeholder="Votre prénom"
+                        />
+                    </div>
                     <input
                         type="email"
                         class="input"
                         maxlength="255"
                         required
+                        name="email"
                         placeholder="Votre e-mail"
                     />
                     <input
@@ -91,10 +115,12 @@
                         required
                         maxlength="255"
                         class="input"
+                        name="sujet"
                         placeholder="Sujet de votre message"
                     />
                     <textarea
                         required
+                        name="message"
                         maxlength="511"
                         class="textarea"
                         placeholder="Message ..."
@@ -102,8 +128,8 @@
                     ></textarea>
                     <p class="text-right">
                         <button
-                            to="/contact"
-                            class="mt-4 inline-flex h-12 items-center justify-center rounded-full bg-primary-600 px-8 font-display text-lg font-bold text-white ring-primary-600 transition duration-150 ease-in-out hover:ring"
+                            type="submit"
+                            class="mt-4 inline-flex h-12 items-center justify-center rounded-full bg-primary-700 px-8 font-display text-lg font-bold text-white ring-primary-600 transition duration-150 ease-in-out hover:ring"
                         >
                             Envoyer
                         </button>

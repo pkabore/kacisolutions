@@ -1,5 +1,5 @@
 <script setup>
-    import Card from "@/components/Card.vue";
+    import ProductItem from "@/components/ProductItem.vue";
     import Heading from "@/components/Heading.vue";
 
     const props = defineProps({
@@ -8,35 +8,28 @@
             default: [
                 {
                     id: 1,
-                    title: "Design",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
+                    title: "Imprimante",
+                    price: 12000,
+                    img: "printer.jpg",
+                    link: "https://wa.me/22677546973",
+                    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor illo molestiae, mollitia laborum, natus amet quam quibusdam architecto ratione sed corporis! Illo quisquam sapiente dolores laboriosam exercitationem blanditiis sed repellat.",
                 },
 
                 {
                     id: 2,
-                    title: "Conception",
-                    desc: "La conception est une étape importante du processus de réalisation de votre projet. Nous mettons l'accent sur un design intuitif permettant aux utilisateurs une navigation aisée de votre site web.",
+                    title: "Tablette graphique",
+                    price: 12000,
+                    img: "design.jpg",
+                    link: "https://wa.me/22677546973",
+                    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nam delectus nemo, quo officiis culpa labore doloribus fuga, voluptas dolore et dicta rerum perspiciatis blanditiis. Alias deserunt quae tempora ipsam!",
                 },
                 {
                     id: 3,
-                    title: "Programmation",
-                    desc: "Le code est un art pour nous. Kacisolutions ne se limite pas seulement à la partie visuelle de votre produit mais aussi aux détails de sécurité, de performance et de maintenance dans le futur.",
-                },
-                {
-                    id: 4,
-                    title: "Infogérance",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
-                },
-
-                {
-                    id: 5,
-                    title: "Infographie",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
-                },
-                {
-                    id: 6,
-                    title: "Infogérance",
-                    desc: "Kaci-solutions utilise les dernières normes et bonnes pratiques du domaine du design et du CMS pour assurer que votre produit réponde à vos besoins divers.",
+                    title: "Ordinateur Macbook",
+                    price: 12000,
+                    img: "mac.jpg",
+                    link: "https://wa.me/22677546973",
+                    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos officiis ea quos itaque, ratione minima, dignissimos consectetur, quae hic recusandae at est? Dolore rerum tempore itaque, nesciunt libero debitis incidunt.",
                 },
             ],
         },
@@ -57,7 +50,11 @@
             <div
                 class="grid grid-flow-row grid-cols-1 justify-center gap-4 p-4 pt-0 md:grid-cols-2 md:p-10 lg:grid-cols-3 lg:gap-8"
             >
-                <Card v-for="item in items" :key="item.id" :item="item" />
+                <ProductItem
+                    v-for="item in items"
+                    :key="item.id"
+                    :item="item"
+                />
             </div>
         </transition>
     </article>

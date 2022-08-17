@@ -9,9 +9,9 @@
     <div class="relative">
         <button
             @click="open = !open"
-            class="rounded-xl p-2 text-2xl text-white ring-primary-600 transition duration-150 ease-in-out hover:text-primary-600 hover:ring-4 focus:text-primary-600 focus:ring-4"
+            class="rounded-xl p-1 text-2xl text-white ring-primary-600 transition duration-150 ease-in-out hover:text-primary-600 hover:ring focus:text-primary-600 focus:ring"
         >
-            <MenuIcon class="h-7 w-7" />
+            <MenuIcon class="h-7 w-7 stroke-[3px]" />
         </button>
 
         <transition
